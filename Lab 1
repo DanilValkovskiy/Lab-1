@@ -1,0 +1,35 @@
+#include <iostream> 
+
+int main()
+{
+    // input numbers
+    double num1, num2;
+    // results off operations 
+    double difference, sum, quotient, product;
+    std::cout << "__begin 9__" << std::endl;
+    // introduction 
+    std::cout << "Enter the first number: ";
+    std::cin >> num1;
+    std::cout << "Enter the second number: ";
+    std::cin >> num2;
+    // product calculation
+    product = num1 * num1 * num2 * num2;
+    // calculation of the sum
+    sum = num1 * num1 + num2 * num2;
+    // calculating the difference
+    difference = num1 * num1 - num2 * num2;
+    // calculation of the quotient
+    if (num2 != 0)
+    {
+        quotient = (num1 * num1) / (num2 * num2);
+        // outputting results
+        std::cout << "difference of squares: " << difference << std::endl;
+        std::cout << "product of squares: " << product << std::endl;
+        std::cout << "sum of squares: " << sum << std::endl;
+        std::cout << "quotient of squares: " << quotient << std::endl;
+    }
+    else 
+    {
+        std::cout << "The second number cannot be zero for the calculation: ";
+    }
+}
